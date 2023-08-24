@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Borel&family=Caprasimo&family=Caveat:wght@700&family=Dancing+Script:wght@400;600;700&family=Nanum+Gothic&family=Oswald:wght@300;400&family=Poppins:wght@500;700&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(3, 3, 40);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(26, 26, 77);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+            margin: 110px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            margin-top: 50px;
+            width: 34px;
+            font-size: 2.1rem;
+        }
+
+        .leftsection button {
+            background-color: purple;
+            border: 2px solid white;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+
+
+        }
+
+        .rightsection {
+
+            width: 34px;
+        }
+
+        .rightsection img {
+            width: 90%;
+            margin: 50 0px;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .textgray {
+            color: gray;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: rgb(160, 160, 241);
+            text-decoration: none;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+
+        .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(160, 160, 241);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .secondsection h1 {
+            font-size: 1.5rem;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 6vw;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 75px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        footer {
+            background-color: rgb(9, 11, 48);
+
+        }
+
+        .footer {
+            display: flex;
+
+            height: 233px;
+            margin: 23px 122px;
+
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Your existing styles... */
+
+        @media (max-width: 1000px) {
+            nav {
+                height: fit-content;
+                flex-direction: column-reverse;
+            }
+
+            nav ul {
+                flex-direction: row;
+                justify-content: space-evenly;
+
+
+                height: fit-content;
+
+            }
+
+            nav ul a {
+                padding: 0px 10px;
+                font-size: small;
+            }
+
+            #nv {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .secondsection {
+                min-width: 80vw;
+                margin: auto;
+                height: 80vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .firstsection {
+                flex-direction: column-reverse;
+                align-items: center;
+                margin-top: 80px;
+            }
+
+            .firstsection>div {
+                width: 80%;
+                text-align: center;
+            }
+
+            .rightsection img {
+                width: 100%;
+                margin: 20px 0;
+            }
+
+            .box {
+                width: 100%;
+                margin: 30px 0;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main hr {
+                margin: 20px 0;
+            }
+
+            .secondsection .vertical {
+                height: unset;
+            }
+
+            .box {
+                flex-direction: column;
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                left: 45px;
+
+            }
+
+            .secondsection .box {
+                width: 50vw;
+            }
+
+            nav {
+                flex-direction: column-reverse;
+            }
+
+            .secondsection {
+                min-width: 80vw;
+               margin: auto;
+                height: 80vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="nv">
+            <div class="left">Debayan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Conatct</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi! My name is <span class="purple">Debayan</span>
+                <div> And I am a Passionate</div>
+
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="res..pdf" download="YourResumeName.pdf">
+                        <button class="btn">Download Resume</button>
+                    </a>
+
+                    <a href="https://github.com/felixoder" target="_blank">
+                        <button class="btn">Visit GitHub</button>
+                    </a>
+
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="textgray">What I had done before</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.png.png" alt="bg">
+                    <div class="vertical-title">
+                        HTML Developer (2022)
+                    </div>
+                    <div class="vertical-desc">
+                       I had started HTML as a preliminary Markup language . I had learnt all the basics and fundamental aspects of this markup language that helped me alot to understand each of the points of web development.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html.png.png" alt="bg">
+                    <div class="vertical-title">
+                        CSS Developer (2022)
+                    </div>
+                    <div class="vertical-desc">
+                        I had started CSS as a Styling model sheet . I had learnt all the basics and fundamental aspects of this and implement in various projects  that helped me alot to my road of development.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="cs.png.png" alt="bg">
+                    <div class="vertical-title">
+                        Javascript Developer (2022)
+                    </div>
+                    <div class="vertical-desc">
+                        JavaScript is a little bit hard language rather than the other programming language, I had learnt the DOM manipulation and the details of each part of the language and I think that will help me in my backend module also .I had also made so many projects related to frontened development(GITHUB)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="js.png.png" alt="bg">
+                    <div class="vertical-title">
+                        React Developer (2022)
+                    </div>
+                    <div class="vertical-desc">
+                        I had learnt React as a important and popular JS framework that is so much important in recent days to implement the logics in web pages
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="react.png.png" alt="bg">
+                    <div class="vertical-title">
+                        Rest-API Developer (2022)
+                    </div>
+                    <div class="vertical-desc">
+                        Rest API is one of the most important topic in FRONTEND , I had made so many projects using rest API
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="api.png.png" alt="bg">
+                    <div class="vertical-title">
+                        Facebook clone
+                    </div>
+                    <div class="vertical-desc">
+                        i had made several projects related to frontend development like A FULLY FLEDGED SPOTIFY APP , several CLONE of web app like amazon , flipkart , FACEBOOk etc
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="fb.png.png" alt="bg">
+                    <div class="vertical-title">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Debayan's developer Portfolio</h3>
+                <h4>Copyright &COPY; by Debayan (2023)</h4>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web-Developer', 'Graphics Designer', 'Competetive Programmer', 'Backend-Developer', 'Techaholic'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
